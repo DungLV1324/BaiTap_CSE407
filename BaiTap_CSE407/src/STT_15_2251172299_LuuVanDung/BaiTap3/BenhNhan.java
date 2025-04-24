@@ -9,6 +9,7 @@ public class BenhNhan {
     private List<BacSi> danhSachBacSi;
 
     public BenhNhan(String ten) {
+
         this.ten = ten;
         this.danhSachBacSi = new ArrayList<>();
     }

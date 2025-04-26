@@ -1,8 +1,5 @@
 package STT_15_2251172299_LuuVanDung.BaiTap3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MayTinh {
     private String ten;
     private BoNho boNho;

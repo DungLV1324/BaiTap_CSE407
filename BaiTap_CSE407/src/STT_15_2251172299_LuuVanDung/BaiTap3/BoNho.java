@@ -1,9 +1,6 @@
 package STT_15_2251172299_LuuVanDung.BaiTap3;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BoNho {
     private String loai;
     private int dungLuong;

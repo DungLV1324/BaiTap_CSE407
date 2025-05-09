@@ -1,8 +1,5 @@
-package STT_15_2251172299_LuuVanDung;
+package _15_2251172299_LuuVanDung.BaiTap3;
 
-
-import STT_15_2251172299_LuuVanDung.BaiTap3.MayTinh;
-import STT_15_2251172299_LuuVanDung.BaiTap3.BoNho;
 
 public class Main {
     public static void main(String[] args) {

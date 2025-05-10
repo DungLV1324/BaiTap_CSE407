@@ -1,4 +1,4 @@
-package _15_2251172299_LuuVanDung_BaiTap3_0705;
+package _15_2251172299_LuuVanDung_BaiTap2_HT3;
 
 class Circle extends Shape {
     private double radius;

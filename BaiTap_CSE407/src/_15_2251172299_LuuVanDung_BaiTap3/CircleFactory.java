@@ -1,14 +1,14 @@
 package _15_2251172299_LuuVanDung_BaiTap3;
 
-import java.util.Scanner;
+public class CircleFactory implements ShapeFactory {
+    private double radius;
 
-class CircleFactory implements ShapeFactory {
-
-    @Override
-    public Shape createShape(Scanner scanner) {
-        System.out.print("Nhập bán kính hình tròn: ");
-        double radius = scanner.nextDouble();
-        return new Circle(radius);
+    public CircleFactory(double radius) {
+        this.radius = radius;
     }
 
+    @Override
+    public Shape createShape() {
+        return new Circle(radius);
+    }
 }

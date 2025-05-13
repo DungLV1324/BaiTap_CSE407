@@ -1,22 +1,16 @@
 package _15_2251172299_LuuVanDung_BaiTap3;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        ShapeFactory recleFactory = new RectangleFactory(12, 11);
+        ShapeFactory cirFactory = new CircleFactory(10);
 
-        ShapeFactory circleFactory = new CircleFactory();
-        ShapeFactory rectangleFactory = new RectangleFactory();
+        Shape rectangle = recleFactory.createShape();
+        Shape circle = cirFactory.createShape();
 
-        Shape circle = circleFactory.createShape(scanner);
-        Shape rectangle = rectangleFactory.createShape(scanner);
+        Shape[] sp = {circle, rectangle};
 
-        Shape[] shapes = {circle, rectangle};
-
-        AreaCalculator calculator = new AreaCalculator();
-        double totalArea = calculator.calculateTotalArea(shapes);
-
-        System.out.println("Tổng diện tích: " + totalArea);
+        double sum = AreaCalculator.calculateTotalArea(sp);
+        System.out.println("Tổng diện tích = " + sum);
     }
 }

@@ -1,14 +1,16 @@
 package _15_2251172299_LuuVanDung_BaiTap3;
 
-import java.util.Scanner;
+public class RectangleFactory implements ShapeFactory {
+    private double length;
+    private double width;
 
-class RectangleFactory implements ShapeFactory {
+    public RectangleFactory(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
 
-    public Shape createShape(Scanner scanner) {
-        System.out.print("Nhập chiều dài hình chữ nhật: ");
-        double length = scanner.nextDouble();
-        System.out.print("Nhập chiều rộng hình chữ nhật: ");
-        double width = scanner.nextDouble();
+    @Override
+    public Shape createShape() {
         return new Rectangle(length, width);
     }
 }

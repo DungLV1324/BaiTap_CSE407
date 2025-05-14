@@ -1,7 +1,7 @@
 package _15_2251172299_LuuVanDung_BaiTap3;
 
 
-class Rectangle extends Shape {
+class Rectangle implements Shape {
     private double length;
     private double width;
 

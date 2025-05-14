@@ -2,15 +2,10 @@ package _15_2251172299_LuuVanDung_BaiTap3;
 
 public class Main {
     public static void main(String[] args) {
-        ShapeFactory recleFactory = new RectangleFactory(12, 11);
-        ShapeFactory cirFactory = new CircleFactory(10);
+        ShapeFactory rectangleFactory = new RectangleFactory(10,12);
+        ShapeFactory circleFactory = new CircleFactory(13);
 
-        Shape rectangle = recleFactory.createShape();
-        Shape circle = cirFactory.createShape();
-
-        Shape[] sp = {circle, rectangle};
-
-        double sum = AreaCalculator.calculateTotalArea(sp);
-        System.out.println("Tổng diện tích = " + sum);
+        System.out.println("Diện tích hình tròn = "+circleFactory.calculateTotalArea());
+        System.out.println("Diện tích hình chữ nhật = : "+rectangleFactory.calculateTotalArea());
     }
 }

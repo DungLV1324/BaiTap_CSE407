@@ -1,6 +1,6 @@
 package _15_2251172299_LuuVanDung_BaiTap3;
 
-public class CircleFactory implements ShapeFactory {
+public class CircleFactory extends ShapeFactory {
     private double radius;
 
     public CircleFactory(double radius) {
@@ -10,5 +10,10 @@ public class CircleFactory implements ShapeFactory {
     @Override
     public Shape createShape() {
         return new Circle(radius);
+    }
+
+    @Override
+    public double calculateTotalArea() {
+        return createShape().calculateArea();
     }
 }

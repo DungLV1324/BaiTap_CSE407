@@ -1,9 +1,6 @@
 package _15_2251172299_LuuVanDung_BaiTap4;
 
-
-import _15_2251172299_LuuVanDung_BaiTap3.Shape;
-
-class Rectangle implements Shape {
+class Rectangle implements Shape2D {
     private double length;
     private double width;
 
@@ -12,8 +9,12 @@ class Rectangle implements Shape {
         this.length = length;
     }
 
+    public Rectangle() {
+        System.out.println("Rectangle != null");
+    }
+
     @Override
-    public double calculateArea() {
+    public double CalculateArea() {
         return length * width;
     }
 }

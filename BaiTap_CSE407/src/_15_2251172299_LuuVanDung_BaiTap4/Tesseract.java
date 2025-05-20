@@ -1,6 +1,6 @@
 package _15_2251172299_LuuVanDung_BaiTap4;
 
-public class Tesseract {
+public class Tesseract implements Shape4D{
     private double edge;
 
     public Tesseract(double edge) {
@@ -11,7 +11,13 @@ public class Tesseract {
         return edge;
     }
 
-    public double getHyperVolume() {
+    public Tesseract() {
+        System.out.println("Tesseract != null");
+    }
+
+
+    @Override
+    public double CalculateHyperVolume() {
         return Math.pow(edge, 4);
     }
 }

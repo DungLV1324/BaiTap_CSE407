@@ -1,17 +1,18 @@
 package _15_2251172299_LuuVanDung_BaiTap4;
 
 
-import _15_2251172299_LuuVanDung_BaiTap3.Shape;
-
-class Circle implements Shape {
+class Circle implements Shape2D {
     private double radius;
 
     public Circle(double radius) {
         this.radius = radius;
     }
+    public Circle() {
+        System.out.println("Circle != null");
+    }
 
     @Override
-    public double calculateArea() {
+    public double CalculateArea() {
         return Math.PI * radius * radius;
     }
 }

@@ -7,14 +7,6 @@ public class Hypersphere implements Shape4D {
         this.radius = radius;
     }
 
-    public Hypersphere() {
-        System.out.println("Hypersphere != null");
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
     @Override
     public double CalculateHyperVolume() {
         return 0.5 * Math.PI * Math.PI * Math.pow(radius, 4);

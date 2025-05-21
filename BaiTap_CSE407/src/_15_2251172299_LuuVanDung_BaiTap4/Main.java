@@ -7,7 +7,6 @@ public class Main {
         Shape4D tesseract = factory1.Create4DShape();
         Shape2D rectangle = factory1.Create2DShape();
 
-        // Giả sử bạn đã thiết kế constructor Tesseract(double a, double b, double c, double d)
         tesseract = new Tesseract(2, 3, 4, 5);
         rectangle = new Rectangle(2, 3);
 

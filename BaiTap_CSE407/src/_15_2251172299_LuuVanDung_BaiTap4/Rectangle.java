@@ -9,10 +9,6 @@ class Rectangle implements Shape2D {
         this.length = length;
     }
 
-    public Rectangle() {
-        System.out.println("Rectangle != null");
-    }
-
     @Override
     public double CalculateArea() {
         return length * width;

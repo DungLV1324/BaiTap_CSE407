@@ -7,9 +7,6 @@ class Circle implements Shape2D {
     public Circle(double radius) {
         this.radius = radius;
     }
-    public Circle() {
-        System.out.println("Circle != null");
-    }
 
     @Override
     public double CalculateArea() {

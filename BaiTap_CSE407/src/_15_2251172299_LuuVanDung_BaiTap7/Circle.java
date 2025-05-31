@@ -1,14 +1,20 @@
 package _15_2251172299_LuuVanDung_BaiTap7;
 
 
-class Circle  {
+class Circle implements Shape  {
     private double radius;
 
     public Circle(double radius) {
         this.radius = radius;
     }
 
-    public double circleArea() {
+    @Override
+    public double calculateArea() {
         return  Math.PI * radius * radius;
+    }
+
+    @Override
+    public double calculateHyperVolume() {
+        return 0.5 * Math.PI * Math.PI * Math.pow(radius, 4);
     }
 }

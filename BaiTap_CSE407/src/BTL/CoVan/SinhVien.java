@@ -1,12 +1,12 @@
 package BTL.CoVan;
 
 public class SinhVien {
-    public String name;
-    public String id;
-    public String requestedLecturer;
+    public String ten;
+    public String ma_sv;
+    public String requestedGiangVien;
 
     @Override
     public String toString() {
-        return "Student{name='" + name + "', id='" + id + "', requestedLecturer='" + requestedLecturer + "'}";
+        return "Student{ten='" + ten + "', ma sinh vien='" + ma_sv + "', requestedGiangVien='" + requestedGiangVien + "'}";
     }
 }

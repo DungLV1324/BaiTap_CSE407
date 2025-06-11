@@ -13,18 +13,18 @@ public class GiangVienApprovalBuilder implements CoVanBuilder {
     }
 
     @Override
-    public void buildStudentInfo() {
-        giangVien.approvedStudent = "Nguyen Van A";
+    public void buildThongTinSinhVien() {
+        giangVien.approvedSinhVien = "Nguyen Van A";
     }
 
     @Override
-    public void buildAdvisorRequest() {
+    public void buildYeuCauCoVan() {
         // No action needed
     }
 
     @Override
-    public void buildApproval() {
-        giangVien.name = "Dr. Tran B";
-        giangVien.department = "Computer Science";
+    public void buildPheDuyet() {
+        giangVien.ten = "Dr. Tran B";
+        giangVien.ma_gv = "GV007";
     }
 }

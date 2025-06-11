@@ -13,18 +13,18 @@ public class SinhVienAdvisorBuilder implements CoVanBuilder {
     }
 
     @Override
-    public void buildStudentInfo() {
-        sinhVien.name = "Nguyen Van A";
-        sinhVien.id = "SV001";
+    public void buildThongTinSinhVien() {
+        sinhVien.ten = "Nguyen Van A";
+        sinhVien.ma_sv = "SV001";
     }
 
     @Override
-    public void buildAdvisorRequest() {
-        sinhVien.requestedLecturer = "Dr. Tran B";
+    public void buildYeuCauCoVan() {
+        sinhVien.requestedGiangVien = "Dr. Tran B";
     }
 
     @Override
-    public void buildApproval() {
+    public void buildPheDuyet() {
         // Student cannot approve, so leave empty or log
     }
 }

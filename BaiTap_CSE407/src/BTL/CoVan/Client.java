@@ -7,13 +7,13 @@ public class Client {
         Director director = new Director(studentBuilder);
         director.makeRequest();
         SinhVien sinhVien = studentBuilder.getResult();
-        System.out.println("Student request: " + sinhVien);
+        System.out.println("Sinh viên request: " + sinhVien);
 
         // Bước 2: Giảng viên duyệt sinh viên
         GiangVienApprovalBuilder lecturerBuilder = new GiangVienApprovalBuilder();
         director.changeBuilder(lecturerBuilder);
         director.makeRequest();
         GiangVien giangVien = lecturerBuilder.getResult();
-        System.out.println("Lecturer approval: " + giangVien);
+        System.out.println("Giảng viên approval: " + giangVien);
     }
 }

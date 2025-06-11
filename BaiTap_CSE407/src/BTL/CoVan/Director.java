@@ -13,8 +13,8 @@ public class Director {
 
     public void makeRequest() {
         builder.reset();
-        builder.buildStudentInfo();
-        builder.buildAdvisorRequest();
-        builder.buildApproval();
+        builder.buildThongTinSinhVien();
+        builder.buildYeuCauCoVan();
+        builder.buildPheDuyet();
     }
 }

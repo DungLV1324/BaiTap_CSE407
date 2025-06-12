@@ -1,10 +1,14 @@
 package BTL.DanhGia;
 
+import java.util.Scanner;
+
 public class DanhGiaKyNangBuilder implements DanhGiaBuilder {
     private DanhGia danhGia;
+    private Scanner scanner;
 
     public DanhGiaKyNangBuilder() {
         this.reset();
+        scanner = new Scanner(System.in);
     }
 
     @Override
@@ -14,17 +18,20 @@ public class DanhGiaKyNangBuilder implements DanhGiaBuilder {
 
     @Override
     public void buildKyNang() {
-        danhGia.kyNang = "Kỹ năng lập trình xuất sắc";
+        System.out.print("Nhập đánh giá kỹ năng: ");
+        danhGia.kyNang = scanner.nextLine();
     }
 
     @Override
     public void buildThaiDo() {
-        danhGia.thaiDo = "Thái độ tích cực, cầu tiến";
+        System.out.print("Nhập đánh giá thái độ: ");
+        danhGia.thaiDo = scanner.nextLine();
     }
 
     @Override
     public void buildNoiDungKhac() {
-        danhGia.noiDungKhac = "Có khả năng làm việc nhóm tốt";
+        System.out.print("Nhập nội dung đánh giá khác: ");
+        danhGia.noiDungKhac = scanner.nextLine();
     }
 
     public DanhGia getResult() {

@@ -2,6 +2,8 @@ package BTL.DanhGia;
 
 public class SinhVien {
     public void xemDanhGia(DanhGia danhGia) {
-        System.out.println("Sinh viên nhận được:\n" + danhGia);
+        System.out.println("\nSinh viên nhận được đánh giá:\n" + danhGia);
     }
+
+
 }

@@ -8,6 +8,10 @@ public class CircleBuilder implements ShapeBuilder {
 		circle = new Circle();
 	}
 
+	public Circle getResult() {
+		return circle;
+	}
+
 	@Override
 	public void buildType() {
 		circle.type = "Type Circle";

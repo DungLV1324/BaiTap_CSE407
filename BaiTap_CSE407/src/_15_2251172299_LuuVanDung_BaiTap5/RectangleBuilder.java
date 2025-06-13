@@ -8,6 +8,11 @@ public class RectangleBuilder implements ShapeBuilder {
 		rectangle = new Rectangle();
 	}
 
+
+	public Rectangle getResult() {
+		return rectangle;
+	}
+
 	@Override
 	public void buildType() {
 		rectangle.type = "Type Rectangle";
